@@ -3,19 +3,25 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "start": "ts-node --transpile-only proxy.ts"
+    "start": "ts-node --transpile-only cors-proxy.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lastmjs/podcrypt-proxy.git"
   },
   "author": "Jordan Last <jordan.michael.last@gmail.com>",
+  "contributors": [
+    "Jordan Last <jordan.michael.last@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lastmjs/podcrypt-proxy/issues"
   },
   "homepage": "https://github.com/lastmjs/podcrypt-proxy#readme",
   "dependencies": {
+    "@types/node": "12.0.2",
+    "cors-anywhere": "0.4.1",
+    "http-proxy": "1.17.0",
     "ts-node": "8.1.0",
     "typescript": "3.4.5"
   }

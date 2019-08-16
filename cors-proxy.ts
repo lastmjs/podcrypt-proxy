@@ -25,7 +25,9 @@ const server = corsProxy.createServer({
         'cache-control',
         'pragma',
         'upgrade-insecure-requests',
-        'referer'
+        'referer',
+        'origin',
+        'content-type'
     ],
     setHeaders: {
         // 'host': 'chtbl.com',

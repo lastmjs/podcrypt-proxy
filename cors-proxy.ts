@@ -4,7 +4,7 @@ const server = corsProxy.createServer({
     originWhitelist: [],
     setHeaders: {
         // I believe the documentation says that the header keys here should be lowercase strings
-        'user-agent': 'Node.js',
+        // 'user-agent': 'Node.js',
         'origin': 'https://proxy.podcrypt.app',
         // 'x-requested-with': 'XMLHttpRequest'
     }

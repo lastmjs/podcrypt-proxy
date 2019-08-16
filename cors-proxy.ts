@@ -12,7 +12,10 @@ const server = corsProxy.createServer({
         // }
     },
     httpProxyOptions: {
-        followRedirects: true
+        // followRedirects: true
+        changeOrigin: true,
+        // hostRewrite: true,
+        // autoRewrite: true
     }
 });
 

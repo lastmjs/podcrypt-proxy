@@ -3,9 +3,9 @@ import * as corsProxy from 'cors-anywhere';
 const server = corsProxy.createServer({
     originWhitelist: [],
     setHeaders: {
-        'User-Agent': 'Node.js',
-        'Origin': 'https://proxy.podcrypt.app',
-        'X-Requested-With': 'XMLHttpRequest'
+        'user-agent': 'Node.js',
+        'origin': 'https://proxy.podcrypt.app',
+        'x-requested-with': 'XMLHttpRequest'
     }
 });
 

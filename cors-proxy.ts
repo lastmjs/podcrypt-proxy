@@ -14,6 +14,7 @@ const server = corsProxy.createServer({
     //   redirectSameOrigin: true,
     // originWhitelist: [],
     removeHeaders: [
+        'x-forwarded-proto',
         'cookie',
         'authority',
         'method',
@@ -41,8 +42,8 @@ const server = corsProxy.createServer({
         //     followRedirects: true
         // }
     },
-    // httpProxyOptions: {
-    //     xfwd: false,
+    httpProxyOptions: {
+        xfwd: false,
     //     // followRedirects: false,
     //     headers: {
     //         'origin': 'https://proxy.podcrypt.app',
@@ -51,7 +52,13 @@ const server = corsProxy.createServer({
     //     // changeOrigin: true,
     //     // hostRewrite: true,
     //     // autoRewrite: true
-    // }
+    }
+});
+
+server.on('request', (req) => {
+    console.log(req.headers);
+
+    delete req.headers['x-forwarded-for']
 });
 
 const port = process.env.PORT || 4000;

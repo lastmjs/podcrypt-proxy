@@ -15,10 +15,10 @@ const server = corsProxy.createServer({
     // originWhitelist: [],
     setHeaders: {
         // 'host': 'chtbl.com',
-        'accept': '*/*',
+        // 'accept': '*/*',
         // I believe the documentation says that the header keys here should be lowercase strings
         // 'user-agent': 'Node.js',
-        'user-agent': 'curl/7.65.1',
+        'user-agent': 'Node.js',
         // 'origin': 'https://proxy.podcrypt.app',
         // 'x-requested-with': 'XMLHttpRequest'
         // httpProxyOptions: {

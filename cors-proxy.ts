@@ -2,9 +2,9 @@ import * as corsProxy from 'cors-anywhere';
 
 // TODO only allow podcrypt.app
 const server = corsProxy.createServer({
-    // originWhitelist: ['https://podcrypt.app'],
+    originWhitelist: ['https://podcrypt.app'],
     removeHeaders: [
-        // 'connection'
+        'connection'
     ],
     setHeaders: {
         // I believe the documentation says that the header keys here should be lowercase strings

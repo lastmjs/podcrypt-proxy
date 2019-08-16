@@ -1,8 +1,10 @@
 import * as corsProxy from 'cors-anywhere';
 
-// TODO only allow podcrypt.app
 const server = corsProxy.createServer({
-    originWhitelist: ['https://podcrypt.app'],
+    originWhitelist: [
+        'http://localhost:5000',
+        'https://podcrypt.app'
+    ],
     removeHeaders: [
         'connection'
     ],

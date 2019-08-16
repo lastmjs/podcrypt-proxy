@@ -13,6 +13,19 @@ const server = corsProxy.createServer({
     //   ],
     //   redirectSameOrigin: true,
     // originWhitelist: [],
+    removeHeaders: [
+        'cookie',
+        'authority',
+        'method',
+        'path',
+        'scheme',
+        'accept',
+        'accept-encoding',
+        'accept-language',
+        'cache-control',
+        'pragma',
+        'upgrade-insecure-requests'
+    ],
     setHeaders: {
         // 'host': 'chtbl.com',
         // 'accept': '*/*',

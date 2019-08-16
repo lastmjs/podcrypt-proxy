@@ -25,10 +25,10 @@ const server = corsProxy.createServer({
     httpProxyOptions: {
         xfwd: false,
         // followRedirects: false,
-        // headers: {
-        //     'origin': 'https://proxy.podcrypt.app',
+        headers: {
+            'origin': 'https://proxy.podcrypt.app',
         //     'x-requested-with': 'XMLHttpRequest'    
-        // }
+        }
         // changeOrigin: true,
         // hostRewrite: true,
         // autoRewrite: true

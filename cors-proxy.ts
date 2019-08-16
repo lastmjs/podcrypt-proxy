@@ -4,7 +4,8 @@ const server = corsProxy.createServer({
     originWhitelist: [],
     setHeaders: {
         'User-Agent': 'Node.js',
-        'Origin': 'https://proxy.podcrypt.app'
+        'Origin': 'https://proxy.podcrypt.app',
+        'X-Requested-With': 'XMLHttpRequest'
     }
 });
 

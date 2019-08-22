@@ -7,7 +7,20 @@ const server = corsProxy.createServer({
     ],
     removeHeaders: [
         'connection',
-        'referer'
+        'cookie',
+        'authority',
+        'method',
+        'path',
+        'scheme',
+        'accept',
+        'accept-encoding',
+        'accept-language',
+        'cache-control',
+        'pragma',
+        'upgrade-insecure-requests',
+        'referer',
+        'origin',
+        'content-type'
     ],
     setHeaders: {
         // I believe the documentation says that the header keys here should be lowercase strings

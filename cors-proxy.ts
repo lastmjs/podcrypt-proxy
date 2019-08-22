@@ -6,7 +6,8 @@ const server = corsProxy.createServer({
         'https://podcrypt.app'
     ],
     removeHeaders: [
-        'connection'
+        'connection',
+        'referer'
     ],
     setHeaders: {
         // I believe the documentation says that the header keys here should be lowercase strings

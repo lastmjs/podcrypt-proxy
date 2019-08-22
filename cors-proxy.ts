@@ -13,7 +13,7 @@ const server = corsProxy.createServer({
         'user-agent': 'Node.js',
     },
     httpProxyOptions: {
-        // xfwd: false // TODO we should consider this for the privacy of the clients
+        xfwd: false // TODO we should consider this for the privacy of the clients
     }
 });
 
